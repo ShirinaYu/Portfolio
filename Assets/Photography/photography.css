@@ -1,0 +1,142 @@
+body{
+    background-color: #440D0D;
+    font-family: 'Poiret One', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+  }
+
+header{
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+.icon-container{
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    left: 20px;
+  }
+  
+.icon-container img{
+    width: 100px;
+    height: 100px;
+  }
+  
+.logo-container img{
+    width: 80px;
+    height: auto;
+    margin-left: 50%;
+  }
+
+nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 5px;
+    background-color: #190101;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    border-radius: 15px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav a:hover{
+    background-color: #8f2626;
+}
+  
+.social-icons{
+    display: flex;
+    margin-right: 40px; 
+  }
+  
+.social-icons a{
+    margin-left: 10px;
+
+  }
+.welcome-text{
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Poiret One', sans-serif;
+
+}
+
+.collapsed {
+    max-height: 1000px; 
+}
+
+@media only screen and (max-width: 768px) {
+    .social-icons {
+      display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        max-height: none;
+        position: static;
+        background-color: transparent;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 14px 10px;
+    }
+}
+.photo1-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+
+.photo1-container img{
+  width: 510px;
+  height: auto;
+  
+}
+.project-section {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+.photo2-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+
+.photo2-container img{
+  width: 510px;
+  height: auto;
+  
+}
+.project-section2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
